@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipo_animais">
+        <item>Bovino</item>
+        <item>Suíno</item>
+        <item>Aves</item>
+        <!-- Outros tipos de animais -->
+    </string-array>
+    <string-array name="tipo_colheitas">
+        <item>Soja</item>
+        <item>Milho</item>
+        <item>Arroz</item>
+        <!-- Outros tipos de colheitas -->
+    </string-array>
+</resources>
