@@ -4,15 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Fundo com a imagem -->
+
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/background_image" /> <!-- Substitua por sua imagem de fundo -->
+        android:src="@drawable/background_image" /> 
 
-    <!-- Título do aplicativo -->
+
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
@@ -25,7 +25,6 @@
         android:textStyle="bold"
         android:gravity="center" />
 
-    <!-- Formulário de Login -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,7 +35,7 @@
         android:background="#80FFFFFF"
         android:padding="16dp">
 
-        <!-- Campo Nome -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,7 +49,6 @@
             android:background="@android:drawable/edit_text"
             android:inputType="textPersonName" />
 
-        <!-- Campo E-mail -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,7 +63,7 @@
             android:background="@android:drawable/edit_text"
             android:inputType="textEmailAddress" />
 
-        <!-- Campo Senha -->
+     
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -80,7 +78,7 @@
             android:background="@android:drawable/edit_text"
             android:inputType="textPassword" />
 
-        <!-- Botões de Login e Cadastro -->
+    
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
