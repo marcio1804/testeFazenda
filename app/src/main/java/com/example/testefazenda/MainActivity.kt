@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main) // Confirme que o layout XML se chama activity_main.xml
+        setContentView(R.layout.activity_main)
 
-        // Inicializar os componentes do layout usando os IDs fornecidos
+    
         nameEditText = findViewById(R.id.nameEditText)
         emailEditText = findViewById(R.id.emailEditText)
         notaProdutorEditText = findViewById(R.id.notaProdutorEditText)
@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         passwordEditText = findViewById(R.id.passwordEditText)
         cadastrarButton = findViewById(R.id.cadastrarButton)
 
-        // Configurar o botão de cadastro para verificar os campos e exibir uma mensagem
         cadastrarButton.setOnClickListener {
             val nome = nameEditText.text.toString().trim()
             val email = emailEditText.text.toString().trim()
@@ -35,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             val dataNascimento = dataNascimentoEditText.text.toString().trim()
             val senha = passwordEditText.text.toString().trim()
 
-            // Verificar se todos os campos foram preenchidos
+          
             if (nome.isEmpty() || email.isEmpty() || notaProdutor.isEmpty() ||
                 dataNascimento.isEmpty() || senha.isEmpty()
             ) {
@@ -45,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
-                // Aqui você pode adicionar lógica adicional, como salvar em um banco de dados
+                
                 Toast.makeText(
                     this,
                     "Cadastro realizado com sucesso!",
